@@ -1,4 +1,26 @@
-const Navbar = () => {};
+import { Link } from "react-router-dom";
+import styles from "./Navbar.module.scss";
+
+const Navbar = () => {
+  return (
+    <nav className={styles.Navbar}>
+      <ul className={styles.Navbar_ul}>
+        <li className={styles.Navbar_item}>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/nvidia">Nvidia</Link>
+        </li>
+        <li>
+          <Link to="/amd">AMD</Link>
+        </li>
+        <li>
+          <Link to="/cart">Cart</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
 
