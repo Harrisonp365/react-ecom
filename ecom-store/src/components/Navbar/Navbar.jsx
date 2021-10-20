@@ -8,13 +8,13 @@ const Navbar = () => {
         <li className={styles.Navbar_item}>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className={styles.Navbar_item}>
           <Link to="/nvidia">Nvidia</Link>
         </li>
-        <li>
+        <li className={styles.Navbar_item}>
           <Link to="/amd">AMD</Link>
         </li>
-        <li>
+        <li className={styles.Navbar_item}>
           <Link to="/cart">Cart</Link>
         </li>
       </ul>
