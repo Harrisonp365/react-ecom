@@ -1,0 +1,15 @@
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  &_input {
+    width: 25%;
+    height: 1.5rem;
+  }
+
+  &_button {
+    height: 1.9rem;
+    //border: 2px solid gray;
+  }
+}

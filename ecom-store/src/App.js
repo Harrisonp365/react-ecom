@@ -1,11 +1,10 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
+import styles from "./App.module.scss";
+import Header from "./containers/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Connected</h1>
-      {/* <Navbar /> */}
+    <div className={styles.app}>
+      <Header />
     </div>
   );
 }
