@@ -7,6 +7,7 @@
     justify-content: space-around;
     padding: 10px 10px;
     cursor: pointer;
+    text-decoration: none;
   }
 
   &_item {
@@ -14,17 +15,15 @@
     list-style: none;
     text-decoration: none;
     color: mediumspringgreen;
-    // &:visited {
-    //   text-decoration: none;
-    //   color: mediumspringgreen;
-    // }
-    // &:hover {
-    //   text-decoration: none;
-    //   color: mediumspringgreen;
-    // }
-    // &:focus {
-    //   text-decoration: none;
-    //   color: mediumspringgreen;
-    // }
+
+    :visited {
+      text-decoration: none;
+      color: mediumspringgreen;
+    }
+
+    :hover {
+      text-decoration: none;
+      color: mediumspringgreen;
+    }
   }
 }
