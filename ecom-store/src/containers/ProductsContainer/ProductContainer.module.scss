@@ -1,0 +1,9 @@
+.CardContainer {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   -ms-grid-column-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

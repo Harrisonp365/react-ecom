@@ -1,5 +1,17 @@
-const ProductCard = () => {
-  return <h2>prodCard</h2>;
+import styles from "./ProductCard.module.scss";
+
+const ProductCard = ({ product }) => {
+  return (
+    <div className={styles.Card}>
+      <div>
+        <h2>{product.name}</h2>
+        <h3>{product.variant}</h3>
+        <img src={product.imageUrl} />
+        <h3>{product.price}</h3>
+        <p>{product.quantity} In stock.</p>
+      </div>
+    </div>
+  );
 };
 
 export default ProductCard;
