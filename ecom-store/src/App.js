@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./containers/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import SearchProvider from "./context/SearchContext";
+import Products from "./containers/Products";
 
 function App() {
   return (
@@ -9,8 +10,10 @@ function App() {
       <SearchProvider>
         <Navbar />
         <Switch>
-          <Route path="/nvidia/:id">{}</Route>
-          <Route path="/nvidia">{/* <Nvidias /> */}</Route>
+          <Route path="/products/:id">{}</Route>
+          <Route path="/products">
+            <Products />
+          </Route>
           <Route path="/cart"></Route>
           <Route path="/">
             <Header />
