@@ -9,11 +9,11 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className={styles.Navbar_item}>
-          <Link to="/nvidia">Nvidia</Link>
+          <Link to="/nvidia">Graphics Cards</Link>
         </li>
-        <li className={styles.Navbar_item}>
+        {/* <li className={styles.Navbar_item}>
           <Link to="/amd">AMD</Link>
-        </li>
+        </li> */}
         <li className={styles.Navbar_item}>
           <Link to="/cart">Cart</Link>
         </li>
