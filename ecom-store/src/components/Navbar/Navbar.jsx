@@ -11,9 +11,6 @@ const Navbar = () => {
         <li className={styles.Navbar_item}>
           <Link to="/products">Graphics Cards</Link>
         </li>
-        {/* <li className={styles.Navbar_item}>
-          <Link to="/amd">AMD</Link>
-        </li> */}
         <li className={styles.Navbar_item}>
           <Link to="/cart">Cart</Link>
         </li>

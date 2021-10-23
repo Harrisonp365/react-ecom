@@ -1,0 +1,11 @@
+.ProductCard {
+  border: 2px solid gray;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+
+  &_img {
+    width: 180px;
+    height: 200px;
+  }
+}
