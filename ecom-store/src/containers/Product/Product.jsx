@@ -13,6 +13,7 @@ const Product = () => {
   }
 
   return <ProductCard product={product} />;
+  //Turn this to like a productPage and show extra details
 };
 
 export default Product;
