@@ -1,5 +1,6 @@
 import { useLocation } from "react-router";
-import products from "../../Services/products";
+import { useEffect } from "react";
+import { getProducts } from "../../Services/dbCRUD";
 import ProductCard from "../ProductCard";
 import styles from "./Products.module.scss";
 
@@ -9,8 +10,18 @@ const useQuery = () => {
 };
 
 const Products = () => {
+  const [product, setProducts] = useState(null);
   const query = useQuery();
   const name = query.get("name") ?? "";
+
+  useEffect(() => {
+    const populateProducts = async () => {
+      const products = await getProducts();
+      setProducts(products);
+    };
+
+    populateProducts();
+  }, []);
 
   const filteredResult = products.filter((product) => {
     return `${product.name}`.toLowerCase().includes(name);

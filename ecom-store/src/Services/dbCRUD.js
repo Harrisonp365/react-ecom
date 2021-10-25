@@ -7,7 +7,7 @@ export const createProduct = async (product) => {
   await docRef.set(product);
 };
 
-//Read
+//Read All
 export const getProducts = async () => {
   const colRef = firestore.collection("products");
   const snapshot = await colRef.get(); //returns a promise
