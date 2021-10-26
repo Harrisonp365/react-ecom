@@ -10,7 +10,7 @@ const useQuery = () => {
 };
 
 const Products = () => {
-  const [product, setProducts] = useState(null);
+  const [products, setProducts] = useState(null);
   const query = useQuery();
   const name = query.get("name") ?? "";
 

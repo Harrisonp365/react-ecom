@@ -26,16 +26,16 @@ export const findProduct = async () => {
 //Update
 
 //Destroy
-const deleteRecord = async () => {
+export const deleteRecord = async () => {
   await deleteProduct(product.id);
 };
 
 //Clean Read data
-const cleanRecord = (docSnapshot) => ({
+export const cleanRecord = (docSnapshot) => ({
   id: docSnapshot.id,
   ...docSnapshot.data(),
 });
 
-const cleanedRecord = (querySnapshot) => {
+export const cleanedRecord = (querySnapshot) => {
   return querySnapshot.docs.map(cleanRecord);
 };
