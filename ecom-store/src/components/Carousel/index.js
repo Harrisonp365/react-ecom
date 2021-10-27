@@ -1,2 +1,2 @@
-import Carousel from "./Carousel";
-export default Carousel;
+import ProdCarousel from "./Carousel";
+export default ProdCarousel;

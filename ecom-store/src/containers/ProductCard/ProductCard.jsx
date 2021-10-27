@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { updateProduct } from "../../Services/dbCRUD";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onSubmit }) => {
   const [favourite, setFavourite] = useState(product.favourited);
 
   const handleSubmit = async (event) => {
@@ -12,6 +12,7 @@ const ProductCard = ({ product }) => {
       favourited: favourite,
     };
     await updateProduct(product.id, partial);
+    onSubmit();
   };
 
   return (
