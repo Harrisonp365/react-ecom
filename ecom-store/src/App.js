@@ -4,14 +4,14 @@ import Navbar from "./components/Navbar/Navbar";
 import SearchProvider from "./context/SearchContext";
 import Products from "./containers/Products";
 import Product from "./containers/Product";
-import ProdCarousel from "./components/Carousel";
+import styles from "./App.module.scss";
 
 function App() {
   return (
     <Router>
       <SearchProvider>
         <Navbar />
-        <Switch>
+        <Switch styles={styles.App}>
           <Route path="/products/:id">
             <Product />
           </Route>
@@ -21,7 +21,6 @@ function App() {
           <Route path="/cart"></Route>
           <Route path="/">
             <Header />
-            <ProdCarousel />
             <Products />
           </Route>
         </Switch>

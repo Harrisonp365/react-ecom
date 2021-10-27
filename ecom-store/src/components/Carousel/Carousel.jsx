@@ -3,10 +3,11 @@ import Carousel from "react-bootstrap/Carousel";
 
 const ProdCarousel = () => {
   return (
-    <div className={styles.carousel}>
-      <Carousel>
-        <Carousel.Item>
+    <div>
+      <Carousel className={styles.carousel}>
+        <Carousel.Item className={styles.carousel_item}>
           <img
+            className={styles.carousel_item_image}
             src="https://www.pcworld.com/wp-content/uploads/2021/09/dsc01056-100858556-orig.jpg?resize=1240%2C826&quality=50&strip=all"
             alt="RTX3090 Founders Edition"
           />
