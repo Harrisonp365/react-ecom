@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import ProductCard from "../ProductCard";
+import ProductPage from "../ProductPage";
 import { useState, useEffect } from "react";
 import { findProduct } from "../../Services/dbCRUD";
 
@@ -19,7 +19,7 @@ const Product = () => {
     return <h1>Sorry, no product was found</h1>;
   }
 
-  return <ProductCard product={product} />;
+  return <ProductPage product={product} />;
   //Turn this to like a productPage and show extra details
 };
 

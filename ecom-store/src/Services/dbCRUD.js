@@ -19,15 +19,15 @@ export const findProduct = async (id) => {
   const colRef = firestore.collection("products");
   const docRef = colRef.doc(id);
   const snapshot = await docRef.get();
-
   return cleanRecord(snapshot);
 };
+
+//Read by name
 
 //Update
 export const updateProduct = async (id, partial) => {
   const colRef = firestore.collection("products");
   const docRef = colRef.doc(id);
-
   await docRef.update(partial);
 };
 
@@ -35,7 +35,6 @@ export const updateProduct = async (id, partial) => {
 export const deleteProduct = async (id) => {
   const colRef = firestore.collection("products");
   const docRef = colRef.doc(id);
-
   await docRef.delete(id);
 };
 

@@ -5,7 +5,6 @@ const ProdCarousel = () => {
   return (
     <div className={styles.carousel}>
       <Carousel>
-        {/* <Carousel.Item interval={4000}> */}
         <Carousel.Item>
           <img
             src="https://www.pcworld.com/wp-content/uploads/2021/09/dsc01056-100858556-orig.jpg?resize=1240%2C826&quality=50&strip=all"
@@ -13,6 +12,24 @@ const ProdCarousel = () => {
           />
           <Carousel.Caption>
             <h3>RTX3090 Founders Edition</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src="https://cdn.videocardz.com/1/2020/12/SAPPHIRE-Radeon-RX-6900-XT-16GB-NITRO8.jpg"
+            alt="AMD 6900XT Sapphire Nitro"
+          />
+          <Carousel.Caption>
+            <h3>AMD 6900XT Sapphire Nitro</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src="https://cdn.videocardz.com/1/2020/12/SAPPHIRE-Radeon-RX-6900-XT-16GB-NITRO8.jpg"
+            alt="AMD 6900XT Sapphire Nitro"
+          />
+          <Carousel.Caption>
+            <h3>AMD 6900XT Sapphire Nitro</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
