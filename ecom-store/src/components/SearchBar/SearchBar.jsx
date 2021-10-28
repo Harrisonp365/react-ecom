@@ -6,8 +6,8 @@ const SearchBar = () => {
   const [currentSearch, setCurrentSearch] = useState("");
   const { setSearch } = useContext(SearchContext);
 
-  const handleChange = (e) => {
-    setCurrentSearch(e.target.value);
+  const handleChange = (event) => {
+    setCurrentSearch(event.target.value);
   };
 
   const handleClick = (e) => {
@@ -20,6 +20,7 @@ const SearchBar = () => {
       <input
         className={styles.SearchBar_input}
         type="text"
+        value={currentSearch}
         placeholder="Search for you graphics card here"
         onChange={handleChange}
       />
