@@ -1,29 +1,35 @@
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
+
+.link_style {
+  text-decoration: none;
+}
 
 .Navbar {
+  font-family: $nav-font;
   &_ul {
+    list-style-type: none;
+    background-color: $nav-background-color;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    padding: 10px 10px;
-    cursor: pointer;
-    text-decoration: none;
+    align-items: center;
+    flex-direction: row;
   }
 
   &_item {
-    margin-left: 20px;
-    list-style: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: mediumspringgreen;
 
     :visited {
       text-decoration: none;
-      color: mediumspringgreen;
+      color: white;
     }
 
     :hover {
-      text-decoration: none;
-      color: mediumspringgreen;
+      color: $primary-color;
+      border-radius: 8px;
     }
   }
 }

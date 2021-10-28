@@ -1,0 +1,14 @@
+@import "../../SCSS/typography.scss";
+.Carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+  & img {
+    height: 800px;
+    width: 400px;
+    width: 100%;
+  }
+}
+
+.carousel_title {
+  font-family: $header-font;
+}

@@ -7,7 +7,7 @@ export const createProduct = async (product) => {
   await docRef.set(product);
 };
 
-//Read
+//Read All
 export const getProducts = async () => {
   const colRef = firestore.collection("products");
   const snapshot = await colRef.get(); //returns a promise
@@ -15,27 +15,35 @@ export const getProducts = async () => {
 };
 
 //Read by ID
-export const findProduct = async () => {
+export const findProduct = async (id) => {
   const colRef = firestore.collection("products");
   const docRef = colRef.doc(id);
   const snapshot = await docRef.get();
-
   return cleanRecord(snapshot);
 };
 
+//Read by name
+
 //Update
+export const updateProduct = async (id, partial) => {
+  const colRef = firestore.collection("products");
+  const docRef = colRef.doc(id);
+  await docRef.update(partial);
+};
 
 //Destroy
-const deleteRecord = async () => {
-  await deleteProduct(product.id);
+export const deleteProduct = async (id) => {
+  const colRef = firestore.collection("products");
+  const docRef = colRef.doc(id);
+  await docRef.delete(id);
 };
 
 //Clean Read data
-const cleanRecord = (docSnapshot) => ({
+export const cleanRecord = (docSnapshot) => ({
   id: docSnapshot.id,
   ...docSnapshot.data(),
 });
 
-const cleanedRecord = (querySnapshot) => {
+export const cleanedRecord = (querySnapshot) => {
   return querySnapshot.docs.map(cleanRecord);
 };

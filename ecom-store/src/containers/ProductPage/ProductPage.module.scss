@@ -1,0 +1,56 @@
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
+.ProductPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  font-family: $header-font;
+
+  &_title {
+    margin-bottom: 50px;
+    color: $primary-color;
+  }
+
+  &_img {
+    height: 35vh;
+    width: 30vw;
+    border-radius: 8px;
+  }
+
+  &_cart {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_cartLink {
+    text-decoration: none;
+    color: $secondary-color;
+    padding-right: 20px;
+    :hover {
+      color: $primary-color;
+    }
+  }
+
+  &_price {
+    text-decoration: none;
+    color: $secondary-color;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_desc {
+    width: 30vw;
+  }
+
+  &_quantity {
+    padding: 30px;
+    color: $primary-color;
+  }
+}
+
+.PriceColor {
+  font-weight: bolder;
+  color: black;
+}
