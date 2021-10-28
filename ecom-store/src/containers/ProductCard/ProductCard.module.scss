@@ -19,7 +19,12 @@
   }
 
   &_btn_div {
-    &_btn {
+    &_btn__favourite {
+      border-radius: 9px;
+      background-color: $primary-color;
+    }
+
+    &_btn__not_favourite {
       border-radius: 9px;
       background-color: white;
     }

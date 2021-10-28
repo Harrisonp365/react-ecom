@@ -20,7 +20,6 @@ const Product = () => {
   }
 
   return <ProductPage product={product} />;
-  //Turn this to like a productPage and show extra details
 };
 
 export default Product;
