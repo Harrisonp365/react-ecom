@@ -4,6 +4,8 @@ import ProductCard from "../ProductCard";
 import { SearchContext } from "../../context/SearchContext";
 import styles from "./Products.module.scss";
 
+//I want to have two brand options once a selected brand is clicked it will show you all options under that brand
+
 const Products = () => {
   const { search } = useContext(SearchContext);
   const [products, setProducts] = useState(null);
