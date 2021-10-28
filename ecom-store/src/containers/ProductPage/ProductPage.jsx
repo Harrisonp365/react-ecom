@@ -13,7 +13,7 @@ const ProductPage = ({ product }) => {
           <p className={styles.ProductPage_cartLink}>Add to cart</p>
         </Link>
         <p className={styles.ProductPage_price}>
-          Price: $<p className={styles.PriceColor}>{product.price}</p>
+          Price: <p className={styles.PriceColor}> ${product.price}</p>
         </p>
       </div>
       <p className={styles.ProductPage_desc}>{product.description}</p>

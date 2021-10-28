@@ -1,9 +1,10 @@
 @import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
 
 .title {
   font-family: $header-font;
-  color: lightseagreen;
+  color: $primary-color;
   text-align: center;
   padding: 2rem;
-  font-size: 4rem;
+  font-size: 6rem;
 }

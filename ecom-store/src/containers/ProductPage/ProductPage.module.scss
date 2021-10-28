@@ -6,9 +6,9 @@
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+  font-family: $header-font;
 
   &_title {
-    font-family: $header-font;
     margin-bottom: 50px;
     color: $primary-color;
   }
@@ -41,7 +41,6 @@
   }
 
   &_desc {
-    color: white;
     width: 30vw;
   }
 
@@ -52,5 +51,6 @@
 }
 
 .PriceColor {
-  color: $primary-color;
+  font-weight: bolder;
+  color: black;
 }

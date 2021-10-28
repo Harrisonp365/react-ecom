@@ -1,11 +1,33 @@
+@import "../../SCSS/palette.scss";
+@import "../../SCSS/typography.scss";
+
 .ProductCard {
-  border: 2px solid gray;
+  border: 2px solid $secondary-color;
+  background-color: $secondary-color;
+  font-family: $header-font;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
+  width: 80%;
+
+  &_title {
+    color: $primary-color;
+  }
+
+  &_price {
+    color: $primary-color;
+  }
+
+  &_btn_div {
+    &_btn {
+      border-radius: 9px;
+      background-color: white;
+    }
+  }
 
   &_img {
     width: 300px;
     height: 200px;
+    border-radius: 12px;
   }
 }

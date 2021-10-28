@@ -17,8 +17,9 @@ const ProductCard = ({ product, onSubmit }) => {
 
   return (
     <div className={styles.ProductCard}>
-      <h3>{product.name}</h3>
-      <h3>{product.variant}</h3>
+      <h3 className={styles.ProductCard_title}>
+        {product.name} {product.variant}
+      </h3>
       <Link to={`/products/${product.id}`}>
         {" "}
         <img
@@ -27,10 +28,14 @@ const ProductCard = ({ product, onSubmit }) => {
           alt={product.name}
         />{" "}
       </Link>
-      <p>Price: ${product.price}</p>
-      <div>
-        <button value={favourite} onClick={handleSubmit}>
-          Favourited{product.favourited}
+      <p className={styles.ProductCard_price}>Price: ${product.price}</p>
+      <div className={styles.ProductCard_btn_div}>
+        <button
+          className={styles.ProductCard_btn_div_btn}
+          value={favourite}
+          onClick={handleSubmit}
+        >
+          Favourite{product.favourited}
         </button>
       </div>
     </div>
