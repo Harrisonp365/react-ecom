@@ -1,4 +1,7 @@
+@import "../../SCSS/typography.scss";
+
 .title {
+  font-family: $header-font;
   color: lightseagreen;
   text-align: center;
   padding: 2rem;

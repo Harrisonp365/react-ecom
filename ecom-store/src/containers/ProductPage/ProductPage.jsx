@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 const ProductPage = ({ product }) => {
   return (
     <div className={styles.ProductPage}>
-      <h3 className={styles.ProductPage_title}>
+      <h1 className={styles.ProductPage_title}>
         {product.name} {product.variant}
-      </h3>
+      </h1>
       <img className={styles.ProductPage_img} src={product.imageUrl} />
       <div className={styles.ProductPage_cart}>
         <Link className={styles.ProductPage_cartLink} to={"/cart"}>
           <p className={styles.ProductPage_cartLink}>Add to cart</p>
         </Link>
-        <p className={styles.ProductPage_price}>Price: ${product.price}</p>
+        <p className={styles.ProductPage_price}>
+          Price: $<p className={styles.PriceColor}>{product.price}</p>
+        </p>
       </div>
       <p className={styles.ProductPage_desc}>{product.description}</p>
       <h4 className={styles.ProductPage_quantity}>

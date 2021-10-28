@@ -1,16 +1,15 @@
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
 
 .link_style {
   text-decoration: none;
 }
 
 .Navbar {
+  font-family: $nav-font;
   &_ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #111;
+    background-color: $nav-background-color;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,8 +28,7 @@
     }
 
     :hover {
-      //background-color: #333;
-      color: lightseagreen;
+      color: $primary-color;
       border-radius: 8px;
     }
   }

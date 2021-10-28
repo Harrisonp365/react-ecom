@@ -1,3 +1,5 @@
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
 .ProductPage {
   display: flex;
   justify-content: center;
@@ -6,8 +8,9 @@
   padding-top: 100px;
 
   &_title {
+    font-family: $header-font;
     margin-bottom: 50px;
-    color: green;
+    color: $primary-color;
   }
 
   &_img {
@@ -23,33 +26,31 @@
 
   &_cartLink {
     text-decoration: none;
-    color: grey;
+    color: $secondary-color;
     padding-right: 20px;
     :hover {
-      color: indigo;
+      color: $primary-color;
     }
   }
 
   &_price {
     text-decoration: none;
-    color: grey;
-    :visited {
-      text-decoration: none;
-      color: white;
-    }
-
-    :hover {
-      color: #111;
-      border-radius: 8px;
-    }
+    color: $secondary-color;
+    display: flex;
+    flex-direction: row;
   }
 
   &_desc {
+    color: white;
     width: 30vw;
   }
 
   &_quantity {
     padding: 30px;
-    color: indigo;
+    color: $primary-color;
   }
+}
+
+.PriceColor {
+  color: $primary-color;
 }

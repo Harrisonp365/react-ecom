@@ -16,11 +16,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.Navbar_item}>
-          <Link to="/products" stle={styles.link_style}>
-            Graphics Cards
-          </Link>
-        </li>
-        <li className={styles.Navbar_item}>
           <Link to="/cart" stle={styles.link_style}>
             Cart
           </Link>
