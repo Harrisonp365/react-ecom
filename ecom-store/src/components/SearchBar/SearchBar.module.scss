@@ -1,15 +1,22 @@
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
 .SearchBar {
   display: flex;
   justify-content: center;
   margin: 20px;
+  font-family: $header-font;
 
   &_input {
-    width: 25%;
+    width: 16%;
     height: 1.5rem;
   }
 
   &_button {
-    height: 1.9rem;
-    //border: 2px solid gray;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    background-color: $primary-color;
+    border: none;
   }
 }
