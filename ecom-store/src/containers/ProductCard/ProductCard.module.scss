@@ -36,3 +36,13 @@
     border-radius: 12px;
   }
 }
+
+.Fav_btn {
+  border-radius: 9px;
+  background-color: $secondary-color;
+
+  &_false {
+    border-radius: 9px;
+    background-color: $primary-color;
+  }
+}

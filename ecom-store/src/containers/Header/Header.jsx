@@ -1,8 +1,9 @@
 import ProdCarousel from "../../components/Carousel";
 import SearchBar from "../../components/SearchBar";
 import styles from "./Header.module.scss";
+import Products from "../Products/Products";
 
-const Header = () => {
+const Header = ({ products }) => {
   return (
     <>
       <h1 className={styles.title}>RTX . R . US</h1>
@@ -10,7 +11,7 @@ const Header = () => {
       <br />
       <br />
       <br />
-      <ProdCarousel />
+      <ProdCarousel products={products} />
       <br />
       <br />
       <br />
