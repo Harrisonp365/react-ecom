@@ -8,24 +8,26 @@ import styles from "./App.module.scss";
 
 function App() {
   return (
-    <Router>
-      <SearchProvider>
-        <Navbar />
-        <Switch styles={styles.App}>
-          <Route path="/products/:id">
-            <Product />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route path="/cart"></Route>
-          <Route path="/">
-            <Header />
-            <Products />
-          </Route>
-        </Switch>
-      </SearchProvider>
-    </Router>
+    <div styles={styles.App}>
+      <Router>
+        <SearchProvider>
+          <Navbar />
+          <Switch>
+            <Route path="/products/:id">
+              <Product />
+            </Route>
+            <Route path="/products">
+              <Products />
+            </Route>
+            <Route path="/cart"></Route>
+            <Route path="/">
+              <Header />
+              <Products />
+            </Route>
+          </Switch>
+        </SearchProvider>
+      </Router>
+    </div>
   );
 }
 

@@ -6,13 +6,24 @@ const Navbar = () => {
     <nav className={styles.Navbar}>
       <ul className={styles.Navbar_ul}>
         <li className={styles.Navbar_item}>
-          <Link to="/">Home</Link>
+          <Link to="/" stle={styles.link_style}>
+            Home
+          </Link>
         </li>
         <li className={styles.Navbar_item}>
-          <Link to="/products">Graphics Cards</Link>
+          <Link to="/products" stle={styles.link_style}>
+            Graphics Cards
+          </Link>
         </li>
         <li className={styles.Navbar_item}>
-          <Link to="/cart">Cart</Link>
+          <Link to="/products" stle={styles.link_style}>
+            Graphics Cards
+          </Link>
+        </li>
+        <li className={styles.Navbar_item}>
+          <Link to="/cart" stle={styles.link_style}>
+            Cart
+          </Link>
         </li>
       </ul>
     </nav>

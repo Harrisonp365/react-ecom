@@ -4,13 +4,20 @@ import { Link } from "react-router-dom";
 const ProductPage = ({ product }) => {
   return (
     <div className={styles.ProductPage}>
-      <h3>{product.name} </h3>
-      <h3>{product.variant} edition</h3>
+      <h3 className={styles.ProductPage_title}>
+        {product.name} {product.variant}
+      </h3>
       <img className={styles.ProductPage_img} src={product.imageUrl} />
-      <Link to={"/cart"}>
-        <p>Price: {product.price}</p>
-      </Link>
-      <p>{product.description}</p>
+      <div className={styles.ProductPage_cart}>
+        <Link className={styles.ProductPage_cartLink} to={"/cart"}>
+          <p className={styles.ProductPage_cartLink}>Add to cart</p>
+        </Link>
+        <p className={styles.ProductPage_price}>Price: ${product.price}</p>
+      </div>
+      <p className={styles.ProductPage_desc}>{product.description}</p>
+      <h4 className={styles.ProductPage_quantity}>
+        {product.quantity} Currently in stock
+      </h4>
     </div>
   );
 };

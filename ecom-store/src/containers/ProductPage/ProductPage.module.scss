@@ -1,0 +1,55 @@
+.ProductPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+
+  &_title {
+    margin-bottom: 50px;
+    color: green;
+  }
+
+  &_img {
+    height: 35vh;
+    width: 30vw;
+    border-radius: 8px;
+  }
+
+  &_cart {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_cartLink {
+    text-decoration: none;
+    color: grey;
+    padding-right: 20px;
+    :hover {
+      color: indigo;
+    }
+  }
+
+  &_price {
+    text-decoration: none;
+    color: grey;
+    :visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    :hover {
+      color: #111;
+      border-radius: 8px;
+    }
+  }
+
+  &_desc {
+    width: 30vw;
+  }
+
+  &_quantity {
+    padding: 30px;
+    color: indigo;
+  }
+}
