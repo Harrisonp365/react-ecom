@@ -15,12 +15,12 @@ const ProductCard = ({ product, onSubmit }) => {
     onSubmit();
   };
 
-  let classes;
-  if (favourite === true) {
-    classes = [styles.ProductCard_btn_div_btn__favourite];
-  } else {
-    classes = [styles.ProductCard_btn_div_btn__not_favourite];
-  }
+  // let classes;
+  // if (favourite === true) {
+  //   classes = [styles.ProductCard_btn_div_btn__favourite];
+  // } else {
+  //   classes = [styles.ProductCard_btn_div_btn__not_favourite];
+  // }
 
   return (
     <div className={styles.ProductCard}>
@@ -38,7 +38,7 @@ const ProductCard = ({ product, onSubmit }) => {
       <p className={styles.ProductCard_price}>Price: ${product.price}</p>
       <div className={styles.ProductCard_btn_div}>
         <button
-          className={classes.toString}
+          className={styles.ProductCard_btn_div_btn__favourite}
           value={favourite}
           onClick={handleSubmit}
         >

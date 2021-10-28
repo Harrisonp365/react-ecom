@@ -6,8 +6,8 @@ const SearchBar = () => {
   const [currentSearch, setCurrentSearch] = useState("");
   const { setSearch } = useContext(SearchContext);
 
-  const handleChange = (event) => {
-    setCurrentSearch(event.target.value);
+  const handleChange = (e) => {
+    setCurrentSearch(e.target.value);
   };
 
   const handleClick = (e) => {
