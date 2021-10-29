@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SearchProvider from "./context/SearchContext";
 import Products from "./containers/Products";
 import Product from "./containers/Product";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,14 +14,18 @@ function App() {
         <Switch>
           <Route path="/products/:id">
             <Product />
+            <Footer />
           </Route>
           <Route path="/products">
             <Products />
+            <Footer />
           </Route>
           <Route path="/cart"></Route>
           <Route path="/">
             <Header />
             <Products />
+            <br />
+            <Footer />
           </Route>
         </Switch>
       </SearchProvider>

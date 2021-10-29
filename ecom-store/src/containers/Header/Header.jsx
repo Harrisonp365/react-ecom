@@ -1,7 +1,6 @@
 import ProdCarousel from "../../components/Carousel";
 import SearchBar from "../../components/SearchBar";
 import styles from "./Header.module.scss";
-import Products from "../Products/Products";
 
 const Header = ({ products }) => {
   return (

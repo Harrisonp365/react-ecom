@@ -5,6 +5,11 @@ const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
       <ul className={styles.Navbar_ul}>
+        <li className={styles.Navbar_logo}>
+          {/* <Link to="/" stle={styles.logo_link}> */}
+          RTX.R.US
+          {/* </Link> */}
+        </li>
         <li className={styles.Navbar_item}>
           <Link to="/" stle={styles.link_style}>
             Home

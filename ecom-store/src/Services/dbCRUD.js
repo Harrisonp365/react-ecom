@@ -22,7 +22,7 @@ export const findProduct = async (id) => {
   return cleanRecord(snapshot);
 };
 
-//Read by name
+//Read by brand
 
 //Update
 export const updateProduct = async (id, partial) => {
