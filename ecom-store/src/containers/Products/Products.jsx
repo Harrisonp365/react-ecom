@@ -25,6 +25,10 @@ const Products = () => {
   //   product.name.toLowerCase().includes(search.toLowerCase)
   // );
 
+  if (!products) {
+    return <h1>Sorry, no products were found</h1>;
+  }
+
   return (
     <div className={styles.Products}>
       {products &&

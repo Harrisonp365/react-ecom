@@ -21,6 +21,14 @@ function App() {
             <ProductsByBrand />
             <Footer />
           </Route>
+          <Route path="/products/amd">
+            <ProductsByBrand />
+            <Footer />
+          </Route>
+          <Route path="/products/nvidia">
+            <ProductsByBrand />
+            <Footer />
+          </Route>
           <Route path="/cart">
             <Footer />
           </Route>

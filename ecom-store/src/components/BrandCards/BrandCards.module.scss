@@ -1,0 +1,19 @@
+@import "../../SCSS/typography.scss";
+@import "../../SCSS/palette.scss";
+.Brand_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Brand_card {
+  &_title {
+    font-family: $header-font;
+    color: $primary-color;
+    text-align: center;
+  }
+  &_img {
+    width: 40vw;
+    height: 70vh;
+  }
+}
