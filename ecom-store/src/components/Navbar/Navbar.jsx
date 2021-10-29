@@ -6,15 +6,15 @@ const Navbar = () => {
     <nav className={styles.Navbar}>
       <ul className={styles.Navbar_ul}>
         <li className={styles.Navbar_logo}>
-          {/* <Link to="/" stle={styles.logo_link}> */}
-          RTX.R.US
-          {/* </Link> */}
+          <Link to="/" stle={styles.logo_link}>
+            RTX.R.US
+          </Link>
         </li>
-        <li className={styles.Navbar_item}>
+        {/* <li className={styles.Navbar_item}>
           <Link to="/" stle={styles.link_style}>
             Home
           </Link>
-        </li>
+        </li> */}
         <li className={styles.Navbar_item}>
           <Link to="/products" stle={styles.link_style}>
             Graphics Cards
@@ -37,19 +37,4 @@ export default Navbar;
 //RTX cards
 //AMD cards
 //Cart page
-
 //react-router-dom not yet installed read docs
-
-//CART
-//remove item from cart
-//Cart collection -> single cart record
-//
-//card obj (
-//products: [
-//  id: prodId,
-//  quant: 1
-//]
-//)
-
-//fetch cart collection
-//modify quantity then set cart again

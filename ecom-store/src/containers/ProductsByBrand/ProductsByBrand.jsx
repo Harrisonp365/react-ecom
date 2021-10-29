@@ -1,25 +1,25 @@
 import { useParams } from "react-router-dom";
-import ProductPage from "../../components/ProductPage";
 import { useState, useEffect } from "react";
-import { findProduct } from "../../Services/dbCRUD";
+import { findProductByBrand } from "../../Services/dbCRUD";
+import BrandCards from "../../components/BrandCards/BrandCards";
 
-const Product = () => {
-  const { id } = useParams();
+const ProductsByBrand = () => {
+  const { brand } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const populateProducts = async () => {
-      const data = await findProduct(id);
+      const data = await findProductByBrand(brand);
       setProduct(data);
     };
     populateProducts();
-  }, [id]);
+  }, [brand]);
 
   if (!product) {
     return <h1>Sorry, no product was found</h1>;
   }
 
-  return <ProductPage product={product} />;
+  return <BrandCards product={product} />;
 };
 
-export default Product;
+export default ProductsByBrand;

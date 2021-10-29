@@ -23,6 +23,12 @@ export const findProduct = async (id) => {
 };
 
 //Read by brand
+export const findProductByBrand = async (brand) => {
+  const colRef = firestore.collection("products");
+  const docRef = colRef.doc(brand);
+  const snapshot = await docRef.get();
+  return cleanRecord(snapshot);
+};
 
 //Update
 export const updateProduct = async (id, partial) => {

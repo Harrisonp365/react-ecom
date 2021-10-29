@@ -11,7 +11,7 @@ const SearchBar = () => {
   };
 
   const handleClick = (e) => {
-    setSearch(currentSearch);
+    setSearch(currentSearch.toLowerCase());
     setCurrentSearch("");
   };
 

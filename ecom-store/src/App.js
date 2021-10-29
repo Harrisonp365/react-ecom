@@ -5,6 +5,7 @@ import SearchProvider from "./context/SearchContext";
 import Products from "./containers/Products";
 import Product from "./containers/Product";
 import Footer from "./components/Footer";
+import ProductsByBrand from "./containers/ProductsByBrand/ProductsByBrand";
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
             <Footer />
           </Route>
           <Route path="/products">
-            <Products />
+            <ProductsByBrand />
             <Footer />
           </Route>
-          <Route path="/cart"></Route>
+          <Route path="/cart">
+            <Footer />
+          </Route>
           <Route path="/">
             <Header />
             <Products />
